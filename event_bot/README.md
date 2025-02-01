@@ -4,4 +4,5 @@ This bot is built with **Aiogram** and **Selenium**. It finds current events fro
 
 Selenium is used to scrape up-to-date event data, while Aiogram handles the bot's interaction and state management.
 
-The bot logic is implemented in the `EventBot` class located in `bot_class.py`, which manages the entire bot flow, including fetching categories, dates, and locations.
+The bot's interaction flow is handled in `bot.py`.
+The bot's core logicis implemented in the `EventBot` class located in `bot_class.py`.
