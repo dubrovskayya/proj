@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/register.css">
+    <title>Registration</title>
+</head>
+
+<body class="main-page-body">
+<script>
+    window.onload = function() {
+        var message = "{{ message }}";
+        if (message) {
+            alert(message);
+        }
+    };
+</script>
+<main class="form-container">
+    <form method="POST" action="{{ url_for('register') }}" class="form">
+        <h1 class="main-page-header">Register</h1>
+
+        <div class="input-container">
+            <label for="username">Username</label>
+            <input type="text" class="input-field" id="username" name="username" required>
+        </div>
+
+        <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" class="input-field" id="password" name="password" required>
+        </div>
+
+        <div class="input-container">
+            <label for="age">Age</label>
+            <input type="number"  class="input-field" id="age" name="age" required>
+        </div>
+
+        <div class="input-container">
+            <label for="height">Height (cm)</label>
+            <input type="number" step="any" class="input-field" id="height" name="height" required>
+        </div>
+
+        <div class="input-container">
+            <label for="weight">Weight (kg)</label>
+            <input type="number" step="any" class="input-field" id="weight" name="weight" required>
+        </div>
+
+        <div class="input-container">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" class="select-field" required>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        </div>
+
+        <button class="submit-button" type="submit">Register</button>
+    </form>
+</main>
+</body>
+</html>
