@@ -9,6 +9,7 @@ Users log in or register on the start page and then access the home page, where 
 - **Flask**: web framework for handling routes and user interactions
 - **MySQL**: database for storing user data
 - **SQLAlchemy**: ORM for database interaction
+- **HTML\CSS**: frontend part
 
 ## Project Structure
 - **`main.py`** – entry point for running the application
