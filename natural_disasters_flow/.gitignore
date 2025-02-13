@@ -1,0 +1,10 @@
+.env
+.venv/
+*.pyc
+__pycache__/
+.idea/
+message_errors.log
+webserver_config.py
+/charts/map.html
+requirements.txt
+
